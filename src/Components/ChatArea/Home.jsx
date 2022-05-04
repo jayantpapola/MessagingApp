@@ -32,7 +32,7 @@ const Home = () => {
 
     }
     catch(err){
-      navigate('/login')
+      // navigate('/login')
       console.log(err)
     }
   }
