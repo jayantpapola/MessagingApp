@@ -1,0 +1,31 @@
+.Reels{
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    background-color: white;
+    margin-inline: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 0 2px white ,
+    0 0 0 5px lightseagreen,
+    0 0 15px 0px rgba(32, 178, 171);
+    cursor: pointer;
+    transition: .3s;
+}
+.Reels:hover{
+    transform: scale(1.2);
+} 
+
+.Reels > img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+
+
+
+

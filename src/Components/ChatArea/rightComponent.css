@@ -1,0 +1,145 @@
+.rightComponent {
+    height: 100vh;
+    width: 70%;
+    /* padding: 10px 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chats{
+    height: 95vh;
+    width: 95%;
+    background-color: whitesmoke;
+    box-shadow:0 0 60px rgba(0, 0, 0, 0.5) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.rightComponent__header{
+    height: 80px;
+    width: 100%;
+    background-color: #19a09a;
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+}
+.rightComponent_avatar{
+    margin-left: 20px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+}
+.rightComponent_avatar > img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    object-fit: contain;
+}
+.rightComponent_ChatName{
+    margin-left: 10px;
+}
+
+                      /*messages*/
+.messages{
+    height: 100%;
+    width: 100%;    
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.messages::-webkit-scrollbar{
+    width: 3px;
+}
+.messages::-webkit-scrollbar-thumb{
+    background-color: #19a09a;
+}
+.message{
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: #19a09a;
+    max-width: fit-content;
+    margin-left: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: .5s;
+}
+.message.incoming{
+    background-color: whitesmoke;
+    color: #333;
+    margin-right: auto;
+    margin-left: 20px;
+}
+.message > span
+{
+    width: 100%;
+    margin-left: auto;
+    font-size: 10px;
+    /* color: lightgray; */
+}
+
+
+
+
+
+
+
+
+
+/*TEXT_AREA*/
+.rightComponent__TextArea{
+    height: 70px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-inline: 10px;
+}
+.rightComponent__TextBar{
+    /* margin-left: 20px; */
+    height: 40px;
+    width: 80%;
+    background-color: whitesmoke;
+    border-radius: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.rightComponent__TextBar > input{
+    height: 40px;
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+}
+.rightComponent__TextArea > button{
+    height: 40px;
+    cursor: pointer;
+    width: 15%;
+    background-color: #19a09a;
+    color: whitesmoke;
+    font-size: 20px;
+    letter-spacing: 1px;
+    border-radius: 40px;
+    border: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    outline: none;
+    transition: .5s;
+}
+.rightComponent__TextArea > button:hover{
+    background-color: rgb(35, 198, 189);
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .rightComponent {
+        height: 100vh;
+        width: 70%;
+        /* padding: 10px 20px; */
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+}
